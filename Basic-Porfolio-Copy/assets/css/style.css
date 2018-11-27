@@ -1,0 +1,333 @@
+/* css for index.html */
+
+.header {
+    display: block;
+    border-bottom: 2px solid #cccccc;
+    margin-top: -10px;      /* not sure why the header does not stretch the width of the screen */
+    margin-bottom: 25px;
+    margin-left: -10px;
+    margin-right: -10px;
+    background: #ffffff;
+}
+
+.navContainer {
+    display: flex;
+    max-width: 960px;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.linkDivider {
+    border-right: 1px solid #ccc;
+}
+
+.navLinks a {
+    padding: 10px;
+    text-decoration: none;
+    font-family: arial;
+    color: #777777;
+}
+
+.navLinks a:hover {
+    color: #4aaaa5;
+}
+
+.navLinks a:active {
+    color: #302f2f
+}
+
+.logoName {
+    background: #4aaaa5;
+    margin-right:auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    color: #ffffff;
+}
+
+body {
+    background-image: url(../images/qbkls.png);
+}
+
+.content {
+    max-width: 960px;
+    height: auto;
+    overflow: auto;
+    margin: 0 auto;
+    border: 1px solid #dddddd;
+    background: #ffffff;
+}
+
+.content h1 {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 20px;
+    padding:20px 10px;
+    border-bottom: 2px solid #cccccc;
+}
+
+.myFace img {
+    max-width: 20%;
+    height: auto;
+    float: left;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.content p {
+    line-height: 1.7;
+    color: #777777;
+    font-family: arial;
+    padding:0 15px;
+}
+
+.stickyFooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 8px solid #4aaaa5;
+    background: #666666;
+    color: white;
+    text-align: center;
+}
+
+.stickyFooter p {
+    padding: 15px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/* css for portfolio.html */
+
+/* when using flexbox, im not sure how to have my items right aligned with less space in between each box item like the reference pictures from the homework instructions */
+
+.portfolioPics {    
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 960px;
+    height: auto;
+    overflow: auto;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    margin-bottom: 50px; /* wanted to add some space at the bottom in between the content and footer */
+}
+
+.portfolioHeading {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 20px;
+    padding:0 10px;
+    border-bottom: 2px solid #cccccc;
+    width: 100%; 
+}
+
+.line-break {
+    width: 100%;
+    height: 20px;
+}
+
+.portfolioPics img {
+    width: 300px;
+    height: 150px;
+    max-width: 100%;
+ 
+}
+
+.textWrapper {
+    display: block;
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.text {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    position: absolute;
+    top: 90px;
+    height: 50px;
+    width: 300px;
+    background: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  /* css for contact.html */
+
+  .contactContent {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 50px; /* wanted to add some space at the bottom in between the content and footer */
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    overflow: auto;
+}
+
+.contactContent h1 {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 20px;
+    padding:20px 10px;
+    border-bottom: 2px solid #cccccc;
+}
+
+form {
+    color: #777777;
+    font-family: arial;
+    padding: 20px;
+    line-height: 2;
+}
+
+input[type=text] {
+    width: 907px; /* for some reason setting the width to 100% made the input field longer than the 'About Me" border */
+    padding: 5px;
+}
+.contactContent textarea {
+    border: 1px solid #ccc;
+    width: 915px;
+    height: 150px;
+}
+
+input[type=submit] {
+    background: #4aaaa5;
+    color: #ffffff;
+    width: 90px;
+    padding: 10px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 980px){
+    .navContainer {
+        max-width: 100%;
+        padding: 0 40px;
+        margin-right: 40px;
+    }
+    .content {
+        max-width: 75%;
+        margin-left: 30px;
+    } 
+    .portfolioPics {   
+        justify-content: flex-start; 
+        max-width: 55%;
+        margin-left: 30px; 
+    }
+    .textWrapper {
+        max-width: 180px;
+        height: auto;
+        margin-right: -5px;
+    }
+    .text {
+        width: 180px;
+    }
+    .contactContent {
+        max-width: 75%;
+        margin-left: 30px;
+    } 
+    input[type=text]{
+        width: 98%;
+    }
+    .contactContent textarea {
+        width:99%;
+    }
+   
+}
+
+@media screen and (max-width: 768px){
+    .navContainer {
+        margin-left:-20px;
+        margin-right:-27px;
+        max-width:100%;
+    }
+    .content {
+       max-width: 97%;
+       margin: 0 auto;
+    }
+    .portfolioPics {   
+        justify-content: flex-start; 
+        max-width: 97%;
+        margin: 0 auto;
+    }
+    .textWrapper {
+        max-width: 229px;
+        height: auto;
+    }
+    .text {
+        width: 229px;
+    }
+    .contactContent {
+        max-width: 97%;
+        margin: 0 auto;
+    } 
+    input[type=text]{
+        width: 98%;
+    }
+    .contactContent textarea {
+        width:99%;
+    }
+}
+
+@media screen and (max-width: 640px){
+
+    .header {
+        padding-bottom: 20px;
+        
+    }
+    .navContainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        max-width: 100%;
+       
+    }
+    .logoName {
+        margin-right: -20px;
+        margin-left: -20px;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .myFace img {
+        max-width: 86.5%;
+        height: auto;
+        margin-left: 20px;
+    }
+    .content p {
+        padding:0 30px;
+    }
+    .content{
+        margin-bottom: 50px;
+    }
+    .portfolioPics {   
+        justify-content: center; 
+        margin-bottom: 40px;
+        max-width: 85%;
+    }
+    .textWrapper {
+        max-width: 286px;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .text {
+        width: 286px;
+    }
+    .contactContent {
+        margin-bottom: 50px;
+    }
+    input[type=text]{
+        width: 96%;
+    }
+    .contactContent textarea {
+        width:99%;
+    }
+}
+
