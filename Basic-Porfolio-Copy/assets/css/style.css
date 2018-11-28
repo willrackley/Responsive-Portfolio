@@ -203,6 +203,7 @@ input[type=submit] {
 }
 
 /* MEDIA QUERIES */
+/* Not happy with resizing the portfolio pictures which affected the scale of the images, but I didn't know what else to do */
 
 @media screen and (max-width: 980px){
     .navContainer {
@@ -237,7 +238,6 @@ input[type=submit] {
     .contactContent textarea {
         width:99%;
     }
-   
 }
 
 @media screen and (max-width: 768px){
@@ -266,7 +266,7 @@ input[type=submit] {
         max-width: 97%;
         margin: 0 auto;
     } 
-    input[type=text]{
+    input[type=text] {
         width: 98%;
     }
     .contactContent textarea {
@@ -275,10 +275,8 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 640px){
-
     .header {
         padding-bottom: 20px;
-        
     }
     .navContainer {
         display: flex;
@@ -286,7 +284,6 @@ input[type=submit] {
         flex-wrap: wrap;
         align-items: center;
         max-width: 100%;
-       
     }
     .logoName {
         margin-right: -20px;
@@ -303,7 +300,7 @@ input[type=submit] {
     .content p {
         padding:0 30px;
     }
-    .content{
+    .content {
         margin-bottom: 50px;
     }
     .portfolioPics {   
@@ -323,7 +320,7 @@ input[type=submit] {
     .contactContent {
         margin-bottom: 50px;
     }
-    input[type=text]{
+    input[type=text] {
         width: 96%;
     }
     .contactContent textarea {
